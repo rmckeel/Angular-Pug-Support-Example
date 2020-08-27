@@ -1,4 +1,8 @@
-# PugSupportExample
+# Angular Pug Support Example
+Angular has a method for [adding Pug support via the Angular CLI](https://github.com/danguilherme/ng-cli-pug-loader/).
+However, this method is a bit brittle because of the deep file modifications it makes in node_modules directory.
+
+This is an example of Angular 10 pug support that does not require deep file manipulation.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.6.
 
