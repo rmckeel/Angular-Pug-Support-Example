@@ -11,7 +11,11 @@ On an existing project, the steps are:
 1. `npm i -D apply-loader pug-loader pug @angular-builders/custom-webpack`
 1. Added angular.webpack.js
 1. Modified angular.json "builder" lines from `@angular-devkit/build-angular:abcd...` `@angular-builders/custom-webpack:abcd...`
-1. Changed templateUrl from html file to a newly built pug file. Boom!
+2. In angular.json, to the "build" and "test" sections, add `
+"customWebpackConfig": {
+    "path": "./angular.webpack.js"
+}`
+3. Changed templateUrl from html file to a newly built pug file. Boom!
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.6.
 
